@@ -6,7 +6,7 @@ Re-order chunk technique:
 * memory-buffered: storing not in order chunks and then process at each new ordered chunk
 
 ### Performance 
-Tested on Chrome 65.0 on macOS 10.12.6
+Tested on Chrome 65.0 on macOS 10.12.6 with chunk of 1Mb and 10Mb.
 
 | File size     | Time (1Mb)  | Time (10Mb) | Memory (1Mb)   | Memory (10Mb)     |
 | ------------- |:------:|:------:|:------:| -----:|
