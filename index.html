@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet"></head>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>Hashing big file with FileReader JS</h1>
+        <p>Medium post: <a href=""></a></p>
+        <p>Github project: <a href="https://github.com/lvaccaro/hashfilereader">https://github.com/lvaccaro/hashfilereader</a></p>
+    </div>
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="document">File upload</label>
+                        <input type="file" id="document" class="form-control" accept='*' placeholder="Select file"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="chunkSize">Chunk size in bytes</label>
+                        <input type="text" id="chunkSize" class="form-control" value="1048576"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="hash">Hash</label>
+                        <input type="text" id="hash" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="fileSize">File size</label>
+                        <input type="text" id="fileSize" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeStart">Time start</label>
+                        <input type="text" id="timeStart" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeEnd">Time end</label>
+                        <input type="text" id="timeEnd" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeDelta">Time elapsed</label>
+                        <input type="text" id="timeDelta" class="form-control"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="chunkTotal">Total chunks</label>
+                        <input type="text" id="chunkTotal" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="chunkReorder">Chunks reordered</label>
+                        <input type="text" id="chunkReorder" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+
+<script src="./crypto-js/crypto-js.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
