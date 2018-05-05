@@ -85,7 +85,7 @@ function loading(file, callbackProgress, callbackFinal) {
 }
 
 function callbackRead(obj, file, evt, callbackProgress, callbackFinal){
-    if( $("#switchMode").isChecked() ){
+    if( $("#switchMode").is(':checked') ){
         callbackRead_buffered(obj, file, evt, callbackProgress, callbackFinal);
     } else {
         callbackRead_waiting(obj, file, evt, callbackProgress, callbackFinal);
