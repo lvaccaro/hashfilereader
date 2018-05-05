@@ -76,7 +76,7 @@ function loading(file, callbackProgress, callbackFinal) {
         reader.offset = offset;
         reader.index = index;
         reader.onload = function(evt) {
-            callbackRead_buffered(this, file, evt, callbackProgress, callbackFinal);
+            callbackRead(this, file, evt, callbackProgress, callbackFinal);
         };
         reader.readAsArrayBuffer(partial);
         offset += chunkSize;
@@ -84,6 +84,13 @@ function loading(file, callbackProgress, callbackFinal) {
     }
 }
 
+function callbackRead(obj, file, evt, callbackProgress, callbackFinal){
+    if( $("#switchMode").isChecked() ){
+        callbackRead_buffered(obj, file, evt, callbackProgress, callbackFinal);
+    } else {
+        callbackRead_waiting(obj, file, evt, callbackProgress, callbackFinal);
+    }
+}
 
 var lastOffset = 0;
 var chunkReorder = 0;
