@@ -1,7 +1,10 @@
-# hashfilereader
+# Hash FileReader JS
 Hashing big file with FileReader JS
 
-Re-order chunk technique:
+* website example: https://lvaccaro.github.io/hashfilereader/
+* medium post: https://medium.com/@0xVaccaro/hashing-big-file-with-filereader-js-e0a5c898fc98
+
+### Re-order chunk technique:
 * time-shifting: post-process not in order chunks
 * memory-buffered: storing not in order chunks and then process at each new ordered chunk
 
