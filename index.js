@@ -129,7 +129,7 @@ function callbackRead_buffered(reader, file, evt, callbackProgress, callbackFina
 
     function parseResult(offset, size, result) {
         lastOffset = offset + size;
-        callbackProgress(evt.target.result);
+        callbackProgress(result);
         if (offset + size >= file.size) {
             lastOffset = 0;
             callbackFinal();
